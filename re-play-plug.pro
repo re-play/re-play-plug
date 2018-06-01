@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       -= gui
+QT -= gui
 
 TARGET = re-play-plug
 TEMPLATE = lib
@@ -22,10 +22,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    core/plugins/iplugin.cpp
+    core/plugins/iplugin.cpp \
+    core/plugins/ipluginterface.cpp \
+    core/plugins/pluginfeature.cpp
 
 HEADERS += \
-    core/plugins/iplugin.h
+    core/plugins/iplugin.h \
+    core/plugins/ipluginterface.h \
+    core/plugins/pluginfeature.h
 
 unix
 {
