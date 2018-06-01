@@ -68,6 +68,15 @@ namespace RePlay
                 return pInterfaces.find(name) != pInterfaces.end();
             }
 
+            /*!
+             * \brief Adds the specified interface to this plugin.
+             * \param Interface to add.
+             */
+            void IPlugin::addInterface(IPlugInterface * interface)
+            {
+                pInterfaces[interface->getName()] = interface;
+            }
+
         }
     }
 }

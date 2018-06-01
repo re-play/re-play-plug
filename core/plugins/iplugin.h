@@ -46,6 +46,13 @@ namespace RePlay
                 IPlugInterface * getInterface(QString name);
                 bool             hasInterface(QString name);
 
+            protected:
+
+                // ------------------------------------
+                // - Interfaces management
+                // ------------------------------------
+                void addInterface(IPlugInterface *);
+
             private:
 
                 // ------------------------------------
